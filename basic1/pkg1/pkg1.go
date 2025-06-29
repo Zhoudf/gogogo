@@ -3,7 +3,7 @@ package pkg1
 import (
 	"fmt"
 
-	_ "github.com/training/gogogo/pkg2"
+	_ "github.com/training/gogogo/basic1/pkg2"
 )
 
 const PkgName string = "pkg1"

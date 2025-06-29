@@ -5,24 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch file2",
+            "name": "Run Basic Structure",
             "type": "go",
             "request": "launch",
-            "mode": "debug",
-            "program": "${file}",
-            "args": [
-                "--test=testArg2"
-            ]
+            "mode": "auto",
+            "program": "${workspaceFolder}/basic1/01.basic_structure/main.go"
         },
         {
-            "name": "Launch file",
+            "name": "Run Init Order",
             "type": "go",
             "request": "launch",
-            "mode": "debug",
-            "program": "${file}",
-            "args": [
-                "--test=testArg1"
-            ]
+            "mode": "auto",
+            "program": "${workspaceFolder}/basic1/01.init_order/main.go"
+        },
+        {
+            "name": "Run Basic Data Type",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/basic1/02.basic_data_type/main.go"
         }
     ]
 }
