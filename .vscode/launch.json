@@ -24,6 +24,13 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/basic1/02.basic_data_type/main.go"
+        },
+        {
+            "name": "Run Go Task1",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task1/main.go"
         }
     ]
 }
