@@ -179,6 +179,28 @@ func merge(intervals [][]int) [][]int {
 	return result
 }
 
+// 函数用于在数组中找出和为目标值的两个整数的索引
+func twoSum(nums []int, target int) []int {
+	// 创建一个 map 用于存储元素及其索引
+	numMap := make(map[int]int)
+
+	// 遍历数组
+	for i, num := range nums {
+		// 计算目标值与当前元素的差值
+		complement := target - num
+		// 检查差值是否存在于 map 中
+		if index, exists := numMap[complement]; exists {
+			// 若存在，返回两个数的索引
+			return []int{index, i}
+		}
+		// 将当前元素及其索引存入 map
+		numMap[num] = i
+	}
+
+	// 若未找到符合条件的两个数，返回空切片
+	return []int{}
+}
+
 func main() {
 	//1.只出现一次的数字
 	nums := []int{4, 1, 2, 1, 2}
@@ -222,10 +244,10 @@ func main() {
 	fmt.Println("------------------")
 
 	//6.删除有序数组中的重复项
-	nums := []int{1, 1, 2, 2, 3, 4, 4, 4, 5}
-	newLength := removeDuplicates(nums)
+	nums6 := []int{1, 1, 2, 2, 3, 4, 4, 4, 5}
+	newLength := removeDuplicates(nums6)
 	fmt.Println("新长度:", newLength)
-	fmt.Println("去重后的数组:", nums[:newLength])
+	fmt.Println("去重后的数组:", nums6[:newLength])
 	fmt.Println("------------------")
 
 	//7.合并区间
@@ -242,4 +264,12 @@ func main() {
 		{4, 5},
 	}
 	fmt.Println(merge(intervals2)) // 输出: [[1 5]]
+	fmt.Println("------------------")
+
+	//8.两数之和
+	nums8 := []int{2, 7, 11, 15}
+	target := 9
+	result8 := twoSum(nums8, target)
+	fmt.Println(result8) // 输出: [0 1]
+	fmt.Println("------------------")
 }
