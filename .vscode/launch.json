@@ -31,6 +31,41 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/go_task1/main.go"
+        },
+        {
+            "name": "Run Go Task2 pointer",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task2/01.pointer/main.go"
+        },
+        {
+            "name": "Run Go Task2 goroutine",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task2/02.goroutine/main.go"
+        },
+        {
+            "name": "Run Go Task2 object",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task2/03.object/main.go"
+        },
+        {
+            "name": "Run Go Task2 channel",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task2/04.channel/main.go"
+        },
+        {
+            "name": "Run Go Task2 lock",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task2/05.lock/main.go"
         }
     ]
 }
