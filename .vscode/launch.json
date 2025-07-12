@@ -66,6 +66,41 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/go_task2/05.lock/main.go"
+        },
+        {
+            "name": "Run Go Task3 sql",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task3/01.sql/01/main.go"
+        },
+        {
+            "name": "Run Go Task3 sql",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task3/01.sql/02/main.go"
+        },
+        {
+            "name": "Run Go Task3 sqlx",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task3/02.sqlx/01/main.go"
+        },
+        {
+            "name": "Run Go Task3 sqlx",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task3/02.sqlx/02/main.go"
+        },
+        {
+            "name": "Run Go Task3 gorm",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_task3/03.gorm/main.go"
         }
     ]
 }
